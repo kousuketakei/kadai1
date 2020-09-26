@@ -21,11 +21,11 @@ class ViewController: UIViewController {
     @IBAction func button1(_ sender: Any) {
         
         //入力
-        let num1 = (textField1.text! as NSString).integerValue
-        let num2 = (textField2.text! as NSString).integerValue
-        let num3 = (textField3.text! as NSString).integerValue
-        let num4 = (textField4.text! as NSString).integerValue
-        let num5 = (textField5.text! as NSString).integerValue
+        let num1 = Int(textField1.text ?? "") ?? 0
+        let num2 = Int(textField2.text ?? "") ?? 0
+        let num3 = Int(textField3.text ?? "") ?? 0
+        let num4 = Int(textField4.text ?? "") ?? 0
+        let num5 = Int(textField5.text ?? "") ?? 0
         
         //処理
         
